@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> Change</title>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Pragati+Narrow:wght@400;700&display=swap" rel="stylesheet">
+	
+	<script>
+	 var direcciones = new Array("uno.html","dos.html","tres.html","cuatro.html","cinco.html","seis.html","siete.html","ocho.html","nueve.html","diez.html","once.html","doce.html","trece.html","catorce.html","quince.html","dieciseis.html","diecisiete.html","dieciocho.html","diecinueve.html","veinte.html","veintiuno.html","veintidos.html","veintitres.html","veinticuatro.html","veinticinco.html","veintiseis.html","veintisiete.html","veintiocho.html","veintinueve.html","treinta.html","treintayuno.html","treintaydos.html","treintaytres.html","treintaycuatro.html","treintaycinco.html","treintayseis.html","treintaysiete.html","treintayocho.html","treintaynueve.html","cuarenta.html")
+    function enlaceAleatorio(){
+       aleat = Math.random() * direcciones.length
+       aleat = Math.floor(aleat)
+       window.location=direcciones[aleat]
+    }
+	
+	</script>
+</head>
+
+	
+	<style>
+#contenedor{
+	position: relative;
+	width: 1000px;
+    height: 500px;
+} 
+
+#texto{
+	position: absolute; 
+	whidth: 50px;
+	top: 600px;
+	left:180px;
+	background-color: #FFFD83;
+	color: #000000;
+    font-family: 'Pragati Narrow', sans-serif;
+	font-size: 20px ;
+	padding: 10px
+
+} 
+</style>
+	
+<body bgcolor="#000000">
+	<center>
+		<div id="contenedor">
+	<div id="texto" >Después de un momento entendí lo que ocurría. </div>
+			
+	<table width="900" height="600" border="10" bordercolor="#000000">
+  <tbody>
+	   
+    <tr>
+<td width="75%" rowspan="4"><img src="once_uno.jpg" width="600" height="600" alt=""/></td>
+	  </tr>
+	  
+    <tr>
+      <td><a href="javascript:enlaceAleatorio()"><img src="once_dos.gif" width="300" height="200" alt=""/></a>	</td>
+		</td>
+	  </tr>
+	</td>
+	  <tr>   
+  <td><img src="once_tres.jpg" width="300" height="200" alt=""/>	</td>
+	  </tr>
+
+	  <tr>
+		  <td><a href="javascript:enlaceAleatorio()"><img src="once_cuatro.gif" width="300" height="200" alt=""/></a>	
+	  </td>
+	  </tr>
+  </tbody>
+</table>
+</center>
+</body>
+</html>
